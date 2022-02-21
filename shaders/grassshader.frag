@@ -61,7 +61,6 @@ void main() {
     float sunAttn = 1.0;
     float moonAttn = 0.0;
     float redAdd = 0.0;
-    vec3 sun = normalize(light);
     float sun_y = abs(light.y);
 
     if (sun_y < 0.2) {

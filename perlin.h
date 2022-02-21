@@ -18,15 +18,9 @@ namespace perlin {
 
     double dot(double x1, double y1, double x2, double y2);
 
-    double get_noise(double x, double y, int period, int vecNum, int *perm, double *grad_x, double *grad_y);
+    double get_noise(double x, double y, int period, int vecNum, const int *perm, const double *grad_x, const double *grad_y);
 
-    double grad(int hash, double x, double y, double z);
-
-    double get_noise3d(double x, double y, double z, int period, int *perm);
-
-    void create_noise3d(uint64_t seed, double*** map, int size, int startPeriod, int octNum, double attn);
-
-    void create_height_map(uint64_t seed, double** height_map, int size, int startPeriod, int octNum, double attn, bool useSin);
+    void create_height_map(uint64_t seed, double** height_map, int size, int startPeriod, int octNum, double attn);
 }
 
 #endif
